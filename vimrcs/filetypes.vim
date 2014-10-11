@@ -19,6 +19,11 @@ au FileType python map <buffer> <leader>C ?class
 au FileType python map <buffer> <leader>D ?def 
 
 
+augroup vagrant
+  au!
+  au BufRead,BufNewFile Vagrantfile set filetype=ruby
+augroup END
+
 """"""""""""""""""""""""""""""
 " => JavaScript section
 """""""""""""""""""""""""""""""
